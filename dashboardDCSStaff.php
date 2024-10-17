@@ -109,66 +109,7 @@ $user = $_SESSION['user'];
         <h2 class="text-center  text-black mb-4">ABOUT</h2>
         <p class="text-center  text-black">The Examination Payment System for staff at the University of Jaffna's Faculty of Science, Department of Computer Science, facilitates seamless and secure processing of exam-related payments. This system ensures timely transactions and effective management of financial responsibilities related to academic evaluations</p>
 
-        <!-- Additional Links Card -->
-        <div class="row text-center mt-4">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Payment Details</h5>
-                        <a href="payment.php" class="btn btn-custom">Go to Payment Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Summary</h5>
-                        <a href="summary.php" class="btn btn-custom">View Summary</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Approved</h5>
-                        <a href="approved.php" class="btn btn-custom">View Approved</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Add User</h5>
-                        <a href="Registerform.php" class="btn btn-custom">Add New User</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Examination Calim Form</h5>
-                        <a href="Form_1.php" class="btn btn-custom">Fill Form</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Evoluation Form</h5>
-                        <a href="Form_2.php" class="btn btn-custom">Fill Form</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Form_3</h5>
-                        <a href="Form_3.php" class="btn btn-custom">Fill Form</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      
 
     <!-- Bootstrap JS Bundle (Includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

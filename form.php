@@ -16,6 +16,14 @@ $title = 'Fill Form';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title><?php echo $title; ?></title>
     <style>
+             body {
+            background-image: url('https://wallpaper-house.com/data/out/9/wallpaper2you_339572.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            padding-top: 70px;
+            background-color: #f8f9fa;
+            color: #fff;
+        }
         .header {
             background-color: #007bff; /* Bootstrap primary color */
             color: #fff;

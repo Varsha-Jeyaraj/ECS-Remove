@@ -16,44 +16,27 @@ $user = $_SESSION['user'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Registration Form</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom Styles -->
     <style>
-          body {
-            background-image: url('https://wallpaper-house.com/data/out/9/wallpaper2you_339572.jpg');
-            background-size: cover; 
-            background-repeat: no-repeat; 
+        body {
             padding-top: 70px;
             background-color: #f8f9fa;
-            color: #fff;
         }
-        .header {
-            background-color: #007bff; /* Bootstrap primary color */
-            color: #fff;
-            padding: 15px;
+        .form-container {
+            max-width: 500px; /* Set max-width for the form */
+            margin: 0 auto; /* Center the form */
+            padding: 20px;
+            background-color: #fff; /* White background for the form */
             border-radius: 5px;
-            margin-bottom: 20px;
-            margin-left: -20px;
-            margin-right: -20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
-        /* Optional: Custom styles for quick actions card */
-        .card {
-            margin-top: 20px;
-        }
-        .content{
-            max-width: 1000px; /* Set max-width to 600px */
-            margin: 0 auto;
-        }
-        
-        
     </style>
 </head>
 <body>
-    <!-- Top Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+     <!-- Top Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Examination Claim System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
@@ -96,41 +79,34 @@ $user = $_SESSION['user'];
             </div>
         </div>
     </nav>
-
-<div class="content">
-    <div class="header">
-        <h2>Claim Summary</h2>
+    <div class="container form-container">
+        <h2 class="text-center">Registration Form</h2>
+        <form action="userRegister.php" method="post">
+            <div class="mb-3">
+                <input type="text" name="Name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" name="Email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <select id="usertype" name="usertype" class="form-select" required>
+                    <option selected disabled value="">User Type</option>
+                    <option>Management Staff</option>
+                    <option>DCS Staff</option>
+                    <option>DCS Head</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <input type="text" name="username" class="form-control" placeholder="Username" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
     </div>
     
-    <p><!-- Display summary of claims here --></p>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Claim ID</th>
-                <th scope="col">Staff Name</th>
-                <th scope="col">Amount</th>
-                <th scope="col">Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Example summary data -->
-            <tr>
-                <td>001</td>
-                <td>John Doe</td>
-                <td>$500</td>
-                <td>Approved</td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Jane Smith</td>
-                <td>$300</td>
-                <td>Pending</td>
-            </tr>
-            <!-- Additional rows can be added here -->
-        </tbody>
-    </table>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS (Optional: for interactive components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -48,9 +48,9 @@ $user = $_SESSION['user'];
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
         .card-title {
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin-bottom: 15px;
-            color: #007bff;
+            color: black;
         }
         .btn-custom {
             background-color: #007bff;
@@ -66,6 +66,16 @@ $user = $_SESSION['user'];
 
             
         }
+        .custom-col {
+    width: 150px;  /* Fixed width */
+    height: 250px; /* Fixed height */
+    }
+
+    .card {
+    height: 100%; /* Ensure card takes full height of column */
+    }
+
+
     </style>
 </head>
 <body>
@@ -108,65 +118,109 @@ $user = $_SESSION['user'];
         <!-- Welcome Message -->
         <h2 class="text-center  text-black mb-4">ABOUT</h2>
         <p class="text-center  text-black">The Examination Payment System for staff at the University of Jaffna's Faculty of Science, Department of Computer Science, facilitates seamless and secure processing of exam-related payments. This system ensures timely transactions and effective management of financial responsibilities related to academic evaluations</p>
-
-        <!-- Additional Links Card -->
+                
         <div class="row text-center mt-4">
-            <div class="col-md-4 mb-4">
+           
+            <div class="col-md-2 mb-4">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Payment Details</h5>
-                        <a href="payment.php" class="btn btn-custom">Go to Payment Details</a>
+                    <img src="./staffpic/Mr.charles.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 100%; height: auto; max-width: 150px; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Dr.E.Y.A.Charles</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-2 mb-4">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Summary</h5>
-                        <a href="summary.php" class="btn btn-custom">View Summary</a>
+                    <img src="./staffpic/Mis.Barathy.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 150px; height:150px; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Dr.(Mrs).B.Mayurathan</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-2 mb-4">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Approved</h5>
-                        <a href="approved.php" class="btn btn-custom">View Approved</a>
+                    <img src="./staffpic/Mr.mahesen.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 150px; height: auto; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Dr.S.Mahesan</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-2 mb-4">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Add User</h5>
-                        <a href="Registerform.php" class="btn btn-custom">Add New User</a>
+                    <img src="./staffpic/Mr.Thabodaran.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 150px; height: auto; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Dr.K.Thabotharan</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-2 mb-4">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Examination Calim Form</h5>
-                        <a href="Form_1.php" class="btn btn-custom">Fill Form</a>
+                    <img src="./staffpic/Mr.ramanan.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 150px; height: auto; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Prof.A.Ramanan</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-2 mb-4">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Evoluation Form</h5>
-                        <a href="Form_2.php" class="btn btn-custom">Fill Form</a>
+                    <img src="./staffpic/Mr.sudakran.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 150px; height: auto; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Mr.S.Suthakar</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-2 mb-4">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Form_3</h5>
-                        <a href="Form_3.php" class="btn btn-custom">Fill Form</a>
+                    <img src="./staffpic/Mr.shamalan.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 150px; height: auto; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Prof.M.Siyamalan</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
                     </div>
                 </div>
             </div>
+            <div class="col-md-2 mb-4">
+                <div class="card">
+                    <img src="./staffpic/Mr.sarves.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 150px; height: auto; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Mr.K.Sarveswaran</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4">
+                <div class="card">
+                    <img src="./staffpic/Mr.Kokul.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 150px; height: auto; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Dr.T.Kokul</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4">
+                <div class="card">
+                    <img src="./staffpic/Mis.Nirthika.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 150px; height: auto; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Ms.R.Nirthika</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4">
+                <div class="card">
+                    <img src="./staffpic/Mis.samantha.jpg" class="card-img-top" alt="Dr. E. Y. A. Charles" style="width: 150px; height: auto; margin: auto;">
+                     <div class="card-body">
+                         <h5 class="card-title">Ms.J.S.Tharani</h5>
+                        <a href="payment.php" class="btn btn-custom">View</a>
+                    </div>
+                </div>
+            </div>
+           
         </div>
     </div>
 

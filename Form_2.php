@@ -39,58 +39,47 @@ $user = $_SESSION['user'];
         .card {
             margin-top: 20px;
         }
+        .form-container {
+        max-width: 700px; /* Set max-width to 600px */
+        margin: 0 auto; /* Center the form */
+    }
     </style>
 </head>
 <body>
     <!-- Top Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <!-- Brand -->
             <a class="navbar-brand" href="#">Examination Claim System</a>
-            <!-- Toggler/collapsible Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto mb-5 mb-lg-0">
-                    <!-- nav Dashboard -->
                     <li class="nav-item">
                         <a class="nav-link" href="dashboard.php">Home</a>
                     </li>
-                    <!-- Fill Form Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="fillFormDropdown" role="button" 
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            Fill Form
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="fillFormDropdown">
-                            
-                            <li><a class="dropdown-item" href="Form_1.php">For Preparation</a></li>
-                            <li><a class="dropdown-item" href="Form_3.php">Form 3</a></li>
-                        </ul>
-                    </li>
-                    <!-- Other Navigation Links -->
+                  
                     <li class="nav-item">
-                        <a class="nav-link" href="payment.php">View Payment Details</a>
+                        <a class="nav-link" href="payment.php">Payment Details</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="summary.php">View Summary</a>
+                        <a class="nav-link" href="summary.php">Summary</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="approved.php">Check Approved Sheet</a>
+                        <a class="nav-link" href="approved.php">Approved</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Registerform.php">Add User</a>
                     </li>
                 </ul>
-                <!-- User Dropdown -->
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" 
                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <?php echo htmlspecialchars($user['role']); ?>
+                            <?php echo htmlspecialchars($user['usertype']." : ".$user['name']); ?>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                            <!-- Optional: Add Profile and Settings links if available -->
                             <li><a class="dropdown-item" href="profile.php">Profile</a></li>
                             <li><a class="dropdown-item" href="settings.php">Settings</a></li>
                             <li><hr class="dropdown-divider"></li>
@@ -161,10 +150,10 @@ $user = $_SESSION['user'];
 
             <!-- Submit Button -->
             <div class="row">
-                <div class="col-md-12 mb-3">
-                    <button type="submit" class="btn btn-primary me-2 submit-btn">Submit</button>
-                
-                
+                <div class="col-md-6 mb-3">
+                    <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+                </div>
+                <div class="col-md-6 mb-3">
                     <button type="reset" class="btn btn-secondary btn-danger reset-btn">Reset</button>
                 </div>
             </div>
